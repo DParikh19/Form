@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+    <h1 align="center">
+        UPSC - Union Public Service Commission
+    </h1>
+    <form action="upsc_form">
+        <h2>[Personal Details]</h2>
+        <div>
+            <p> <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p id="Note1">*Note : Name as recorded in the Matriculation/Secondary Examination certificate.<br>
+                *Note : Please don't use any prefix such as Mr. or Mrs., etc.</p>
+            <p><label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transgender">Transgender</option>
+                </select>
+            </p>
+            <p> <label for="dob">Date Of Birth:</label>
+                <input type="date" name="dob" id="dob" required>
+            </p>
+            <p> <label for="fname">Father's Name:</label>
+                <input type="text" id="fname" name="fname" required>
+            </p>
+            <p id="Note4">*Note : Please don't use any prefix such as Shri or Dr.,etc. </p>
+            <p> <label for="mname">Mother's Name:</label>
+                <input type="text" id="mname" name="mname" required>
+            </p>
+            <p id="Note5">Please don't use any prefix such as Smt. or Dr., etc.</p>
+            <p> <label for="nationality">Nationality: </label>
+                <select name="nationality" id="nationality" required>
+                    <option value="ind">Indian</option>
+                </select>
+            </p>
+            <p><label for="marital_status">Marital Status:</label>
+                <select name="marrital_status" id="marital_status" required>
+                    <option value="married">Married</option>
+                    <option value="unmarried">Unmarried</option>
+                </select>
+            </p>
+            <p><label for="physically_challenged">Physically Challenged</label>
+                <select name="physically_challenged" id="physically_challenged" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </p>
+            <p><label for="community">Community:</label>
+                <select name="community" id="community" required>
+                    <option value="general">General</option>
+                    <option value="obc">OBC</option>
+                    <option value="sc/st">SC/ST</option>
+                </select>
+            </p>
+            <p id="Note2">[Candidates belonging to OBCs but coming in the "creamy layer" & thus not being entitled <br>
+                to OBC reservation should indicate their community as "General".]</p>
+            <p> <label for="belong_to_minority">If you belong to minority:</label>
+                <select name="belong_to_minority" id="belong_to_minority">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </p>
+            <p><label for="fee_remission">Fee Remission Claimed:</label>
+                <select name="fee_remision" id="fee_remision">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </p>
+            <p id="Note3">[Fee exemption is admissible only to SC/ST, PH and Female Candidates.]</p>
+        </div>
+
+        <h2>
+
+
+            [Educational Qualification]
+        </h2>
+        <div>
+
+            <p> <label for="select_edu_quali">Select the education qualification:</label>
+                <select name="select_edu_quali" id="select_edu_quali" required>
+                    <option value="bsc">B.sc</option>
+                    <option value="msc">M.sc</option>
+                    <option value="btech">B.tech</option>
+                    <option value="bba">B.BA</option>
+                    <option value="mba">MBA</option>
+                    <option value="bpham">BPham</option>
+                    <option value="mbbs">MBBS</option>
+                    <option value="ca">CA</option>
+                    <option value="llb">LLB</option>
+                    <option value="llm">LLM</option>
+                    <option value="others">Others</option>
+                </select>
+            </p>
+            <p><label for="select_degree">Select your degree in your subject</label>
+                <select name="select_degree" id="select_degree" required>
+                    <option value="bachelor">Bachelors</option>
+                    <option value="masters">Masters</option>
+                    <option value="doctrate">doctrate</option>
+                </select>
+            </p>
+        </div>
+
+        <h2>
+            [Address]
+        </h2>
+        <div>
+
+            <p><label for="line1">Line 1:</label>
+                <input type="text" id="line1" name="line1" required>
+            </p>
+            <p><label for="line2">Line 2</label>
+                <input type="text" id="line2" name="line2" required>
+            </p>
+            <p><label for="line3">Line 3:</label>
+                <input type="text" name="line3" id="line3">
+            </p>
+            <p> <label for="dist/city">District/City:</label>
+                <input type="text" name="dist/city" id="dist/city" required>
+            </p>
+            <p> <label for="state/ut">State/UT:</label>
+                <select name="state/ut" id="state/ut" aria-placeholder="[Select State]" required>
+                    <option value="andaman_nicobar">Andaman and Nicobar</option>
+                    <option value="andhra_pradesh">Andhra Pradesh</option>
+                    <option value="assam">Assam</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="chattisgarh">Chattisgarh</option>
+                    <option value="dadra_nagar">Dadra and Nagar Haveli</option>
+                    <option value="daman_diu">Daman and Diu</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="goa">Goa</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="himachal_pradesh">Himachal Pradesh</option>
+                    <option value="jammu_kashmir">Jammu and Kashmir</option>
+                    <option value="jharkhand">Jharkhand</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="lakshwadweep">Lakshwadweep</option>
+                    <option value="madhya_pradesh">Madhya Pradesh</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="mnaipur">Manipur</option>
+                    <option value="meghalaya">Meghalaya</option>
+                    <option value="mizoram">Mizoram</option>
+                    <option value="nagaland">Nagaland</option>
+                    <option value="orissa">Orissa</option>
+                    <option value="pudducherry">Pudducheryy</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="sikkim">Sikkim</option>
+                    <option value="tamil_nadu">Tamil Nadu</option>
+                    <option value="telangana">Telangana</option>
+                    <option value="tripura">Tripura</option>
+                    <option value="uttar_pradesh">Uttar Pradesh</option>
+                    <option value="uttarakhand">uttrakhand</option>
+                    <option value="west_bengal">West Bengal</option>
+                </select>
+            </p>
+            <p><label for="pincode">Pincode:</label>
+                <input type="number" name="pincode" id="pincode" required>
+            </p>
+            <p> <label for="phone_area-code">Phone with Area code:</label>
+                <input type="number" name="phone_area-code" id="phone_area-code">
+                <input type="number" name="phone_area-code" id="phone_area-code">
+            </p>
+            <p> <label for="mobile">Mobile:</label>
+                <input type="number" name="mobile" id="mobile">
+            </p>
+            <p><label for="e-mail">E-mail:</label>
+                <input type="email" name="e-mail" id="e-mail" required>
+            </p>
+            <p> <label for="confirm_e-mail">Confirm E-mail:</label>
+                <input type="email" name="confirm_e-mail" id="confirm_e-mail" required>
+            </p>
+            <p> <label for="alternate_e-mail">Alternate E-mail:</label>
+                <input type="email" name="alternate_e-mail" id="alternate_e-mail" required>
+            </p>
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </div>
+
+
+
+
+    </form>
+</head>
+
+<body>
+
+</body>
+
+</html>
